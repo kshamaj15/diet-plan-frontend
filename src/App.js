@@ -1,17 +1,15 @@
 import './App.scss';
-import { Switch, Route } from 'react-router';
+import { Switch, Route  } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
 import Articles from './Pages/Articles/Articles';
-import logo from './Assets/logo.png';
+import Header from './Components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo}/>
-      </header>
+    <div className="app">
       <BrowserRouter>
+      <Header/>
       <Switch>
         <Route path="/" exact>
           <Articles/>

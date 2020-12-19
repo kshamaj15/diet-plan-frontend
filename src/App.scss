@@ -1,5 +1,44 @@
-.App-header {
-    img {
-        height: 80px;
+$header-border1: #E9724C;
+$header-border2: #D94558;
+$header-border3: #EF9C80;
+$header-border4: #E06777;
+
+.app-header {
+    background-image: linear-gradient($header-border3, $header-border4);
+    padding: 10px;
+    &-img {
+        img {
+            width: 20%;
+        }
+    }
+    &-menu {
+        display: flex;
+        justify-content: end;
+        ul {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0;
+            li {
+                box-sizing: border-box;
+                list-style: none;
+                .link {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0 12px;
+                    text-transform: capitalize;
+                }
+                &:hover {
+                    border-bottom: 3px solid #fff;
+                }
+            }
+        }
+            
+    }
+    &:hover {
+        background-image: linear-gradient($header-border1, $header-border2);
+        cursor: pointer;
     }
 }
