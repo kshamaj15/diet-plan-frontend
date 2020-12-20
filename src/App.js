@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Articles from './Pages/Articles/Articles';
 import Header from './Components/Header';
+import DietPlan from './Pages/DietPaln/DietPlan';
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
           <Articles/>
         </Route>
         <Route path="/diet-plan">
-          <p>hdsa</p>
+          <DietPlan/>
         </Route>
         <Route path="/exercise">
           <h1>Simmy</h1>
