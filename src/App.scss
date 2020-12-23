@@ -3,8 +3,38 @@ $header-border2: #D94558;
 $header-border3: #EF9C80;
 $header-border4: #E06777;
 
-.app-header {
+$exercise-header1: #114B5F;
+$exercise-header2: #2297BF;
+$exercise-header3: #114B5FCC;
+$exercise-header4: #2297BFCC;
+
+$article-header1: #EED21BEE;
+$article-header2: #BEA60ECC;
+$article-header3: #EED21B;
+$article-header4: #BEA60E;
+
+.exercise-header {
+    background-image: linear-gradient($exercise-header2, $exercise-header1);
+    &:hover {
+        background-image: linear-gradient($exercise-header4, $exercise-header3);
+    }
+}
+
+.diet-plan-header {
     background-image: linear-gradient($header-border3, $header-border4);
+    &:hover {
+        background-image: linear-gradient($header-border1, $header-border2);
+    }
+}
+
+.article-header {
+    background-image: linear-gradient($article-header1, $article-header2);
+    &:hover {
+        background-image: linear-gradient($article-header2, $article-header4);
+    }
+}
+
+.app-header {
     padding: 10px;
     &-img {
         img {
@@ -38,7 +68,6 @@ $header-border4: #E06777;
             
     }
     &:hover {
-        background-image: linear-gradient($header-border1, $header-border2);
         cursor: pointer;
     }
 }
