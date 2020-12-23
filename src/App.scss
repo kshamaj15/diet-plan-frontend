@@ -106,3 +106,18 @@ $article-header4: #BEA60E;
     background-color: #D94558 !important;
     font-size: 30px;
 }
+
+.search-bar {
+    input {
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        color: #222;
+        border-radius: 30px;
+        border: 2px solid $article-header4;
+        padding: 0 16px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
